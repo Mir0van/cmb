@@ -1301,4 +1301,10 @@ button,
     -webkit-transition: opacity 0.3s ease;
     transition: opacity 0.3s ease;
   }
+
+  .footer__link:hover:not(.focus-visible) {
+    opacity: 0.8;
+    -webkit-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
+  }
 }
