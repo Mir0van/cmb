@@ -116,6 +116,11 @@
 
 .footer__social-link {
   display: block;
+
+  @include hover {
+    opacity: 0.8;
+    transition: opacity $trans-default;
+  }
 }
 
 .footer__link {
