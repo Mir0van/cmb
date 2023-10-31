@@ -472,6 +472,32 @@ button,
   min-height: 100vh;
   /* stylelint-disable-next-line */
   min-height: calc(100 * var(--vh, 1vh));
+  background-image: url("../img/index/bg-large.svg");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: auto;
+}
+@media (max-width: 1440px) {
+  .wrapper {
+    background-image: url("../img/index/bg-desktop.svg");
+  }
+}
+@media (max-width: 1279px) {
+  .wrapper {
+    background-image: url("../img/index/bg-tablet.svg");
+    background-position: bottom right;
+  }
+}
+@media (max-width: 1110px) {
+  .wrapper {
+    background-position: bottom left -240px;
+  }
+}
+@media (max-width: 767px) {
+  .wrapper {
+    background-image: url("../img/index/bg-mobile.svg");
+    background-position: bottom center;
+  }
 }
 .wrapper__page {
   -webkit-box-flex: 1;
@@ -602,6 +628,13 @@ button,
   background-color: #ffffff;
   border: 1px solid #37514b;
   color: #37514b;
+}
+@media (max-width: 1279px) {
+  .btn--secondary {
+    background-color: transparent;
+    color: #ffffff;
+    border-color: #ffffff;
+  }
 }
 @media (hover: hover) {
   .btn:hover:not(.focus-visible) {
@@ -904,6 +937,7 @@ button,
   .intro__wrapper {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+    max-width: 455px;
   }
 }
 
@@ -1051,6 +1085,36 @@ button,
 @media (max-width: 374px) {
   .footer__social-list {
     max-width: 262px;
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 1279px) {
+  .footer__social-item:nth-child(n+4) svg {
+    fill: #ffffff;
+  }
+}
+@media (max-width: 1243px) {
+  .footer__social-item:nth-child(n+3) svg {
+    fill: #ffffff;
+  }
+}
+@media (max-width: 1159px) {
+  .footer__social-item:nth-child(n+2) svg {
+    fill: #ffffff;
+  }
+}
+@media (max-width: 767px) {
+  .footer__social-item:nth-child(-n+2) svg {
+    fill: #37514b;
+  }
+}
+@media (max-width: 374px) {
+  .footer__social-item:nth-child(n) svg {
+    fill: #ffffff;
+  }
+  .footer__social-item:nth-child(1) svg, .footer__social-item:nth-child(2) svg, .footer__social-item:nth-child(5) svg {
+    fill: #37514b;
   }
 }
 
@@ -1091,8 +1155,12 @@ button,
           align-items: center;
   position: absolute;
   bottom: 42px;
-  right: 30px;
-  background-color: #37514b;
+  right: 40px;
+}
+@media (max-width: 1440px) {
+  .footer__scroll {
+    right: 30px;
+  }
 }
 @media (max-width: 1279px) {
   .footer__scroll {

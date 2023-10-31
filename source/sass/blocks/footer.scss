@@ -60,6 +60,57 @@
 
   @include vp-374 {
     max-width: 262px;
+    margin-bottom: 5px;
+  }
+}
+
+.footer__social-item {
+  @media (max-width: 1279px) {
+    &:nth-child(n+4) {
+      svg {
+        fill: $color-default-white;
+      }
+    }
+  }
+
+  @media (max-width: 1243px) {
+    &:nth-child(n+3) {
+      svg {
+        fill: $color-default-white;
+      }
+    }
+  }
+
+  @media (max-width: 1159px) {
+    &:nth-child(n+2) {
+      svg {
+        fill: $color-default-white;
+      }
+    }
+  }
+
+  @include vp-767 {
+    &:nth-child(-n+2) {
+      svg {
+        fill: $color-corduroy;
+      }
+    }
+  }
+
+  @include vp-374 {
+    &:nth-child(n) {
+      svg {
+        fill: $color-default-white;
+      }
+    }
+
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(5) {
+      svg {
+        fill: $color-corduroy;
+      }
+    }
   }
 }
 
@@ -90,10 +141,11 @@
 
   position: absolute;
   bottom: 42px;
-  right: 30px;
+  right: 40px;
 
-  //del
-  background-color: $color-corduroy;
+  @include vp-1440 {
+    right: 30px;
+  }
 
   @include vp-1279 {
     position: static;

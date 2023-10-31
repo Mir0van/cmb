@@ -25,6 +25,12 @@
     background-color: $color-default-white;
     border: 1px solid $color-corduroy;
     color: $color-corduroy;
+
+    @include vp-1279 {
+      background-color: transparent;
+      color: $color-default-white;
+      border-color: $color-default-white;
+    }
   }
 
   @include hover-focus {

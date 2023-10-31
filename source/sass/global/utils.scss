@@ -7,6 +7,29 @@
   /* stylelint-disable-next-line */
   min-height: calc(100 * var(--vh, 1vh));
 
+  background-image: url("../img/index/bg-large.svg");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: auto;
+
+  @include vp-1440 {
+    background-image: url("../img/index/bg-desktop.svg");
+  }
+
+  @include vp-1279 {
+    background-image: url("../img/index/bg-tablet.svg");
+    background-position: bottom right;
+  }
+
+  @include vp-1110 {
+    background-position: bottom left -240px;
+  }
+
+  @include vp-767 {
+    background-image: url("../img/index/bg-mobile.svg");
+    background-position: bottom center;
+  }
+
   &__page {
     flex-grow: 1;
 
@@ -19,6 +42,7 @@
     display: flex;
     flex-direction: row-reverse;
     position: relative;
+
 
     @include vp-1279 {
       flex-direction: column;
