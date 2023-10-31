@@ -35,8 +35,8 @@
                 <li class="main-nav__item">
                   <a class="main-nav__link" href="#">Services</a>
                 </li>
-                <li class="main-nav__item main-nav__item--sub">
-                  <a class="main-nav__link" href="#">Insights</a>
+                <li class="main-nav__item">
+                  <a class="main-nav__link main-nav__link--sub" href="#">Insights</a>
                   <ul class="main-nav__sub-menu sub-menu">
                     <li class="sub-menu__item">
                       <a class="sub-menu__link" href="#">Publications</a>
@@ -60,33 +60,92 @@
                 </li>
               </ul>
             </nav>
-            <ul class="main-nav__auxiliary-list">
-              <li class="main-nav__auxiliary-item">
-                <a class="main-nav__auxiliary-link" href="#">
+            <ul class="header__auxiliary-list">
+              <li class="header__auxiliary-item">
+                <a class="header__auxiliary-link" href="#">
                   <svg width="17" height="18" fill="#171717" xmlns="http://www.w3.org/2000/svg" aria-label="Search.">
                     <use href="./img/sprite.svg#search"></use>
                   </svg>
                 </a>
               </li>
-              <li class="main-nav__auxiliary-item">
-                <button class="main-nav__auxiliary-lang" type="button">EN</button>
+              <li class="header__auxiliary-item">
+                <button class="header__auxiliary-lang" type="button">EN</button>
               </li>
-              <li class="main-nav__auxiliary-item">
-                <a class="main-nav__auxiliary-link" href="#">Need support?</a>
+              <li class="header__auxiliary-item header__auxiliary-item--hidden">
+                <a class="header__auxiliary-link header__auxiliary-link--btn btn" href="#">Need support?</a>
               </li>
             </ul>
+            <button class="header__burger burger" type="button">
+              <span class="burger__line burger__line--top"></span>
+              <span class="burger__line burger__line--middle"></span>
+              <span class="burger__line burger__line--bottom"></span>
+            </button>
           </div>
         </div>
-      <main>
-        <section class="intro">
-          <div class="container">
-            <h1>How can we help you?</h1>
+      </header>
+      <div class="wrapper__page">
+        <main>
+          <section class="intro">
+            <h1 class="visually-hidden">Seamless legal services.</h1>
+            <div class="container container--disable">
+              <div class="intro__wrapper">
+                <h2 class="intro__title">How can we help you?</h2>
+                <p class="intro__description">Impeccable quality of legal services.<br>A well-coordinated team.</p>
+                <a class="intro__link btn" href="#">Let’s get in touch</a>
+              </div>
+            </div>
+          </section>
+        </main>
+        <footer class="footer">
+          <div class="container container--disable">
+            <div class="footer__wrapper">
+              <ul class="footer__social-list">
+                <li class="footer__social-item">
+                  <a class="footer__social-link" href="#">
+                    <svg width="49" height="48" fill="#37514b" xmlns="http://www.w3.org/2000/svg" aria-label="Linkedin.">
+                      <use href="./img/sprite.svg#in"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer__social-item">
+                  <a class="footer__social-link" href="#">
+                    <svg width="49" height="48" fill="#37514b" xmlns="http://www.w3.org/2000/svg" aria-label="Linkedin.">
+                      <use href="./img/sprite.svg#telegram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer__social-item">
+                  <a class="footer__social-link" href="#">
+                    <svg width="49" height="48" fill="#37514b" xmlns="http://www.w3.org/2000/svg" aria-label="Linkedin.">
+                      <use href="./img/sprite.svg#vk"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer__social-item">
+                  <a class="footer__social-link" href="#">
+                    <svg width="49" height="48" fill="#37514b" xmlns="http://www.w3.org/2000/svg" aria-label="Linkedin.">
+                      <use href="./img/sprite.svg#youtube"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer__social-item">
+                  <a class="footer__social-link" href="#">
+                    <svg width="49" height="48" fill="#37514b" xmlns="http://www.w3.org/2000/svg" aria-label="Linkedin.">
+                      <use href="./img/sprite.svg#dzen"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+              <a class="footer__link btn btn--secondary" href="#">Sign up</a>
+              <div class="footer__scroll">
+                <span>Scroll</span>
+                <img src="./img/svg/fingerprint.svg" width="32" height="32" alt="Fingerprint" aria-hidden="true">
+                <img src="./img/svg/arrow.svg" width="4" height="7" alt="Arrow" aria-hidden="true">
+              </div>
+            </div>
           </div>
-        </section>
-      </main>
-      <footer>
-        <div class="container"></div>
-      </footer>
+        </footer>
+      </div>
     </div>
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>

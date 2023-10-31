@@ -7,6 +7,29 @@
   /* stylelint-disable-next-line */
   min-height: calc(100 * var(--vh, 1vh));
 
+  &__page {
+    flex-grow: 1;
+
+    width: 100%;
+    max-width: 1440px;
+    min-height: 737px;
+    margin: 0 auto;
+    padding: 0 40px 40px;
+
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+
+    @include vp-1279 {
+      flex-direction: column;
+      padding: 0;
+      margin: 0;
+      max-width: unset;
+      min-height: unset;
+      width: auto;
+    }
+  }
+
   .header,
   .footer {
     flex-shrink: 0;

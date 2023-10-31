@@ -1,0 +1,33 @@
+.burger {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  border: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  background-color: $color-default-white;
+
+  @include hover {
+    opacity: 0.8;
+    transition: opacity $trans-default;
+  }
+}
+
+.burger__line {
+  position: absolute;
+  background-color: $color-corduroy;
+  border-radius: 6px;
+  height: 2px;
+  width: 18px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  &--top {
+    transform: translate(-50%, calc(-50% - 5px));
+  }
+  &--bottom {
+    transform: translate(-50%, calc(-50% + 5px));
+  }
+}
